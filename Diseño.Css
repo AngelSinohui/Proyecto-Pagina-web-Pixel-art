@@ -1,0 +1,208 @@
+/*General*/
+*{
+    font-family: "Consolas", "Courier New", monospace;
+}
+
+h1{
+    text-transform: uppercase;
+}
+
+/*Barra de navegacion*/
+nav{
+    background-color: #253043;
+    padding: 0.5rem;
+    margin-bottom: 15px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: left;
+    list-style: none;
+    border-right: #f9f9f9 solid;
+    margin-right: 40px;
+}
+
+nav li{
+    border-right: #f9f9f9 solid;
+    opacity: 0.5;
+}
+nav li:last-child{
+    border-right: none;
+}
+
+nav a{
+    color: #f9f9f9;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+}
+
+/* Cuerpo */
+body{
+    background-color: #f4f4f4;
+    margin:0 0 0 0;
+    border-top: black solid 6px;
+}
+
+
+.Contenido {
+    margin-left: 30%;
+    padding: 40px;
+}
+
+.Articulo{
+    margin: 10px auto;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.Articulo H4{
+    opacity: .5;
+}
+
+.Articulo p{
+    padding: 20px;
+}
+
+.Titulo{
+    width: 90%;
+    padding: 15px;
+    border-bottom: #222026 solid;
+    border-right: #222026 solid;
+}
+
+.DatosDeNoticia{
+    width: 50%;
+    padding: 15px;
+    border-bottom: #222026 solid;
+}
+
+.LogoDato{
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 40px;
+}
+
+.FilaPrueba {
+    display: flex;                  
+    justify-content: space-between; 
+    align-items: stretch;           
+}
+
+.PieDeSeccion{
+    margin: 20px;
+    padding-bottom: 40px;
+}
+
+.Nota img{
+    width: 100%;
+    height: 100%;
+}
+
+.Botones{
+    text-align: center;
+}
+
+.Botones img{
+    margin-top: 15px;
+    width: 40px;
+    display:inline-block;
+    cursor: pointer;
+}
+
+
+.PieDeSeccion button{
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 20px 60px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+
+.PieDeSeccion span{
+    float: inline-end;
+    text-decoration-line: underline;
+
+}
+
+/*Barra Lateral*/
+
+aside{
+    background-color: #f4f4f4;
+    color: #222026;
+    width: 25%;
+    height: max-content;
+    padding: 30px 20px;
+    position:static;
+    float:left;
+}
+
+.BarraLateral-Titulo{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.BarraLateral-Titulo p{
+    opacity: .80;
+}
+
+aside .LogoTitulo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.BarraLateral-Temas{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.Tema{
+    display: inline-block; 
+    transition: all 0.2s ease;
+    margin-bottom: 20px ;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.Tema img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+/*Pie de pagina*/
+
+footer{
+    background-color: #253043;
+    color: #f9f9f9;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+/*Animaciones*/
+
+li:hover {
+    transform: scale(.9);/*Efecto de escalar*/
+    opacity: 1;
+}
+
+.PieDeSeccion button:hover{ /*Efecto de sombra*/
+    background-color: #777;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.Tema:hover{/*Efecto de escalar y transaladar*/
+    transform: scale(1.1) translateX(15px);
+}
+
+.Botones img:active{/*Efecto de escalar pero solo cuando se hace click arriba*/
+    transform: scale(.9);
+}
