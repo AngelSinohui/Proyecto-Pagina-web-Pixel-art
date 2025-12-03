@@ -206,3 +206,33 @@ li:hover {
 .Botones img:active{/*Efecto de escalar pero solo cuando se hace click arriba*/
     transform: scale(.9);
 }
+
+/*  DISEÑO RESPONSIVE */
+@media screen and (max-width: 990px) {
+
+    .Contenido {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    aside {
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+    }
+
+    .FilaPrueba {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .DatosDeNoticia {
+        width: 100%;
+        border-right: none;
+    }
+
+    .Titulo {
+        width: 100%;
+        border-right: none;
+    }
+}
